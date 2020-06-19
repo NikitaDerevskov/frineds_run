@@ -6,12 +6,8 @@ import {
     PanelHeaderBack,
     Tabbar,
     TabbarItem,
-    Button,
-    PanelHeaderContent,
-    Avatar,
-    Div,
-    PanelHeaderButton
-
+    CardGrid,
+    Card
 } from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
 import  "./styles/app.css"
@@ -28,17 +24,11 @@ function App () {
                 <PanelHeader left={<PanelHeaderBack onClick={() => console.log('hey')} />}>
                     FriendsRun
                 </PanelHeader>
-                    <PanelHeaderContent
-                        status="Вы занимаете 13 место из 37"
-                        before={<Avatar size={72} src={"logo512.png"}
-                                        right={<PanelHeaderButton><Icon28MessageOutline /></PanelHeaderButton>}
-                        />}>
-                        Влад Анесов
-
-                    </PanelHeaderContent>
-                <Div >
-                    <Button size="xl">Общий рейтинг</Button>
-                </Div>
+                <CardGrid>
+                    <Card size="l">
+                        <div style={{ height: 96 }} />
+                    </Card>
+                </CardGrid>
                 <Tabbar>
                     <TabbarItem
                         onClick={() => console.log('hey')}
