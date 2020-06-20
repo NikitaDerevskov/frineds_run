@@ -1,2 +1,10 @@
 import React from 'react';
-export default ArticleItem from;
+import {Card} from "@vkontakte/vkui";
+
+export default function Article() {
+    return (
+        <Card size="l">
+            <div style={{ height: 200 }} />
+        </Card>
+    )
+}

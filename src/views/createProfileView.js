@@ -20,6 +20,7 @@ import Textarea from "@vkontakte/vkui/dist/components/Textarea/Textarea";
 import {Link} from "react-router-dom";
 import logo from '../imgs/logo512.png'
 
+
 function CreateProfileView () {
     return (
         <View activePanel="main">

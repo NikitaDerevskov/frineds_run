@@ -11,8 +11,9 @@ import {
 
 } from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
-import Bottompanel from "../bottompanel";
+import Bottompanel from "../components/bottomPanel";
 import '../styles/app.css'
+import ArticlesList from "../components/articlesList";
 
 
 
@@ -23,24 +24,8 @@ function ArticleView () {
                 <PanelHeader>
                     Статьи
                 </PanelHeader>
-                <CardGrid>
-                    <Card size="l">
-                        <div style={{ height: 200 }} />
-                    </Card>
-                    <Card size="l">
-                        <div style={{ height: 200 }} />
-                    </Card>
-                    <Card size="l">
-                        <div style={{ height: 200 }} />
-                    </Card>
-                    <Card size="l">
-                        <div style={{ height: 200 }} />
-                    </Card>
-                    <Card size="l">
-                        <div style={{ height: 200 }} />
-                    </Card>
-                </CardGrid>
-                <Bottompanel></Bottompanel>
+                <ArticlesList/>
+                <Bottompanel/>
             </Panel>
         </View>
     );

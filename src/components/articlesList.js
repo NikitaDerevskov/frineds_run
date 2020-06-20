@@ -1,2 +1,16 @@
 import React from 'react';
-export default ArticlesList from;
+import {CardGrid} from "@vkontakte/vkui";
+import Article from "./articleItem";
+
+export default function ArticleList()
+{
+    return (
+        <CardGrid>
+            <Article/>
+            <Article/>
+            <Article/>
+            <Article/>
+            <Article/>
+        </CardGrid>
+    )
+}

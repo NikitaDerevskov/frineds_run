@@ -1,2 +1,10 @@
 import React from 'react';
-export default EventItem from;
+import {Card} from "@vkontakte/vkui";
+export default function Event() {
+    return (
+        <Card size="l">
+            <div style={{ height: 100 }} />
+        </Card>
+    )
+
+}

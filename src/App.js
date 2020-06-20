@@ -1,25 +1,20 @@
 import React from 'react';
-import {
-    View,
-    Panel,
-    PanelHeader,
-    Card,
-    CardGrid
 
-} from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
-import Bottompanel from "./bottompanel";
 import './styles/app.css'
 import StartPageView from './views/startPageView'
 import CreateProfileView from './views/createProfileView'
-import EventsListView from './views/eventsListView'
+import ProfileView from './views/profileView'
+import EventsListView from "./views/eventsListView";
+import TinderView from "./views/tinderView"
+import ArticleView from "./views/articlesView"
 import {
     BrowserRouter as Router,
     Switch,
     Route,
     Link
 } from "react-router-dom";
-import EventListView from "./views/eventsListView";
+
 
 import bridge from '@vkontakte/vk-bridge';
 
@@ -30,18 +25,26 @@ function App () {
     return (
         <Router>
             <div>
-                {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
                 <Switch>
+                    <Route path="/profile">
+                        <ProfileView />
+                    </Route>
+                    <Route path="/articles">
+                        <ArticleView />
+                    </Route>
+                    <Route path="/find">
+                        <TinderView />
+                    </Route>
                     <Route path="/create-user">
                         <CreateProfileView />
                     </Route>
                     <Route path="/events">
-                        <EventListView />
+                        <EventsListView />
                     </Route>
                     <Route path="/">
                         <StartPageView />
                     </Route>
+
                 </Switch>
             </div>
         </Router>

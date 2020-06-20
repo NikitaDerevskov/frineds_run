@@ -1,2 +1,16 @@
 import React from 'react';
-export default EventList from;
+import Event from "../components/eventItem";
+import {CardGrid} from "@vkontakte/vkui";
+
+
+export default function EventList() {
+    return(
+        <CardGrid className='events'>
+            <Event></Event>
+            <Event></Event>
+            <Event></Event>
+            <Event></Event>
+        </CardGrid>
+    )
+
+}
