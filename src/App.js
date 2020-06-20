@@ -21,6 +21,11 @@ import {
 } from "react-router-dom";
 import EventListView from "./views/eventsListView";
 
+import bridge from '@vkontakte/vk-bridge';
+
+// Отправляет событие нативному клиенту
+bridge.send("VKWebAppInit", {});
+
 function App () {
     return (
         <Router>
