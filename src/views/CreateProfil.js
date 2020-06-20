@@ -39,15 +39,15 @@ function App () {
                     Влад Анесов
                 </PanelHeaderContent>
                 <Group className = "createProfilInputGroup">
-                <FormLayout >
-                    <FormLayoutGroup top="Рост" className = "createProfilInput">
-                        <Input type="text" defaultValue="" />
-                    </FormLayoutGroup>
-                    <FormLayoutGroup top="Вес" className = "createProfilInput">
-                        <Input type="text" defaultValue="" />
-                    </FormLayoutGroup>
+                    <FormLayout >
+                        <FormLayoutGroup top="Рост" className = "createProfilInput">
+                            <Input type="text" defaultValue="" />
+                        </FormLayoutGroup>
+                        <FormLayoutGroup top="Вес" className = "createProfilInput">
+                            <Input type="text" defaultValue="" />
+                        </FormLayoutGroup>
                         <Textarea top="Интересы" placeholder="" />
-                </FormLayout>
+                    </FormLayout>
                 </Group>
                 <Button size="xl" className="startButton">Сохранить</Button>
                 <Tabbar>
