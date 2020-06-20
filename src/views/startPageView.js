@@ -15,10 +15,13 @@ import {
 import '@vkontakte/vkui/dist/vkui.css';
 import logo from '../start_image.png';
 import '../styles/app.css'
+import {
+    Link
+} from "react-router-dom";
 
 
 
-function StartPageView () {
+function StartPageView (props) {
     return (
         <View activePanel="main">
             <Panel id="main">
@@ -34,7 +37,9 @@ function StartPageView () {
                         <br/>Это приложение поможет тебе держать себя в форме, а также находить новых друзей
                     </p>
                 </Div>
+                <Link to="/create-user">
                 <Button size="xl" className="startButton">Продолжить</Button>
+                </Link>
             </Panel>
         </View>
     );

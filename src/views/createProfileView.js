@@ -17,6 +17,7 @@ import '@vkontakte/vkui/dist/vkui.css';
 import Icon28MessageOutline from '@vkontakte/icons/dist/28/message_outline'
 import '../styles/app.css'
 import Textarea from "@vkontakte/vkui/dist/components/Textarea/Textarea";
+import {Link} from "react-router-dom";
 
 
 function CreateProfileView () {
@@ -43,7 +44,9 @@ function CreateProfileView () {
                         <Textarea top="Интересы" placeholder="" />
                     </FormLayout>
                 </Group>
-                <Button size="xl" className="saveButton">Сохранить</Button>
+                <Link to="/">
+                <Button size="xl" className="saveButton" onClick={() => console.log('hey')}>Сохранить</Button>
+                </Link>
             </Panel>
         </View>
     );
