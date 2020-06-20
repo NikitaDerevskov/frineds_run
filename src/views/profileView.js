@@ -17,12 +17,13 @@ import '@vkontakte/vkui/dist/vkui.css';
 import Icon28MessageOutline from '@vkontakte/icons/dist/28/message_outline'
 import '../styles/app.css'
 import Bottompanel from "../components/bottomPanel";
+import {Link} from "react-router-dom";
 
 function ProfileView () {
     return (
         <View activePanel="main">
             <Panel id="main">
-                <PanelHeader left={<PanelHeaderBack onClick={() => console.log('hey')} />}>
+                <PanelHeader>
                     Профиль
                 </PanelHeader>
                 <Div classname = "buttonAddEvent">
@@ -35,18 +36,26 @@ function ProfileView () {
                 </PanelHeaderContent>
                 </Div>
                 <Div className="buttonAddEvent">
+                    <Link to="/editProfile">
                     <Button size="xl" className ="profileButton">Редактировать профиль</Button>
+                    </Link>
+                    <Link to="raiting">
                     <Button size="xl" className ="profileButton">Общий рейтинг</Button>
+                    </Link>
+                    <Link to="/history">
                     <Button size="xl" className ="profileButton">История событий</Button>
+                    </Link>
                 </Div>
                 <Div className="profileText">
                     <strong >Информация о пользователе:</strong>
                 </Div>
                 <Group>
                     <Div className = "buttonAddEvent">
+                        <Div className="profileText">
                     Рост
                     <br/>Вес
                     <br/>Интересы
+                        </Div>
                     </Div>
                 </Group>
                 <Div className="profileText">

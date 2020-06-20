@@ -25,16 +25,16 @@ function StartPageView (props) {
     return (
         <View activePanel="main">
             <Panel id="main">
-                <PanelHeader left={<PanelHeaderBack onClick={() => console.log('hey')} />}>
+                <PanelHeader>
                     FriendsRun
                 </PanelHeader>
                 <Div className = "image">
                     <img src={logo} alt="logo" />
                     <p>
-                        <strong >Привет дорогой друг!</strong>
+                        <strong >Привет, дорогой друг!</strong>
                     </p>
                     <p className="startText">
-                        <br/>Это приложение поможет тебе держать себя в форме, а также находить новых друзей
+                        <br/>Это приложение поможет тебе держать себя в форме, а также находить новых друзей.
                     </p>
                 </Div>
                 <Link to="/create-user">
