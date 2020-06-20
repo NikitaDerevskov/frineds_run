@@ -10,7 +10,7 @@ import {
     PanelHeaderButton,
     Input,
     FormLayoutGroup,
-    FormLayout, Group
+    FormLayout, Group, Div
 
 } from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
@@ -46,7 +46,9 @@ function CreateProfileView () {
                     </FormLayout>
                 </Group>
                 <Link to="/events">
-                <Button size="xl" className="saveButton" onClick={() => console.log('hey')}>Сохранить</Button>
+                    <Div className="buttonAddEvent">
+                <Button size="xl"  onClick={() => console.log('hey')}>Сохранить</Button>
+                    </Div>
                 </Link>
             </Panel>
         </View>

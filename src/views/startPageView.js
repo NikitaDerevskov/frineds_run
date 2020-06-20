@@ -38,7 +38,9 @@ function StartPageView (props) {
                     </p>
                 </Div>
                 <Link to="/create-user">
-                <Button size="xl" className="startButton">Продолжить</Button>
+                    <Div className = "buttonAddEvent">
+                <Button size="xl" >Продолжить</Button>
+                    </Div>
                 </Link>
             </Panel>
         </View>
