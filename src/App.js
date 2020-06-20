@@ -18,7 +18,6 @@ import {
 
 import bridge from '@vkontakte/vk-bridge';
 
-// Отправляет событие нативному клиенту
 bridge.send("VKWebAppInit", {});
 
 function App () {
@@ -50,9 +49,6 @@ function App () {
         </Router>
     );
 }
-//             <Link to="/">Home</Link>
-//             <Link to="/about">About</Link>
-//             <Link to="/users">Users</Link>
 
 function About() {
     return <h2>About</h2>;
