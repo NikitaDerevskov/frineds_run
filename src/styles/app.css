@@ -1,0 +1,25 @@
+
+.Hey {
+    margin-top: 50px;
+}
+.image img
+{
+    display: block;
+
+    margin: 0 auto;
+}
+.image
+{
+    margin-top: 20px;
+    text-align: center;
+}
+.startText
+{
+    margin-top: -12px;
+}
+.startButton
+{
+    position: absolute;
+    bottom: 65px;
+}
+

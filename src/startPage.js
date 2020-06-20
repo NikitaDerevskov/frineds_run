@@ -30,14 +30,7 @@ function App () {
                 <PanelHeader left={<PanelHeaderBack onClick={() => console.log('hey')} />}>
                     FriendsRun
                 </PanelHeader>
-                <PanelHeaderContent
-                    status="Вы занимаете 13 место из 37"
-                    before={<Avatar size={72} src={"logo512.png"}
 
-                    />}>
-                    Влад Анесов
-                </PanelHeaderContent>
-                <Button size="xl">Общий рейтинг</Button>
                 <Tabbar>
                     <TabbarItem
                         onClick={() => console.log('hey')}
