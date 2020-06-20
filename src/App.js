@@ -37,13 +37,13 @@ function App () {
                         <div style={{ height: 400 }} />
                     </Card>
                     <p>
-                        <strong >Результаты бега:</strong>
+                        <strong >Статистика:</strong>
                     </p>
                     <p className="resultText">
                         <ul>
-                            <li>+228 очков к рейтингу</li>
-                            <li>+228 очков к рейтингу</li>
-                            <li>+228 очков к рейтингу</li>
+                            <li>Время бега</li>
+                            <li>Калории примерно</li>
+                            <li>Скорость бега</li>
                         </ul>
                     </p>
                 </Div>
