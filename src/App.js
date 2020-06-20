@@ -9,20 +9,18 @@ import {
     Button,
     PanelHeaderContent,
     Avatar,
-    Div,
+    Card,
     PanelHeaderButton,
-    Group
+    Group, Div
 
 } from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
-import logo from '../src/start_image.png';
-import './styles/app.css'
-
 import Icon28NewsfeedOutline from '@vkontakte/icons/dist/28/newsfeed_outline';
 import Icon28Notifications from '@vkontakte/icons/dist/28/notifications';
 import Icon28SearchOutline from '@vkontakte/icons/dist/28/search_outline';
 import Icon28MessageOutline from '@vkontakte/icons/dist/28/messages_outline'
 import Icon28More from '@vkontakte/icons/dist/28/more'
+import './styles/app.css'
 
 
 function App () {
@@ -30,18 +28,35 @@ function App () {
         <View activePanel="main">
             <Panel id="main">
                 <PanelHeader left={<PanelHeaderBack onClick={() => console.log('hey')} />}>
-                    FriendsRun
+                    Профиль
                 </PanelHeader>
-                <Div className = "image">
-                    <img src={logo} alt="logo" />
-                    <p>
-                        <strong >Привет дорогой друг!</strong>
-                    </p>
-                    <p className="startText">
-                        <br/>Это приложение поможет тебе держать себя в форме, а также находить новых друзей
-                    </p>
+                <PanelHeaderContent
+                    status="Вы занимаете 13 место из 37"
+                    before={<Avatar size={72} src={"logo512.png"}
+                                    right={<PanelHeaderButton><Icon28MessageOutline /></PanelHeaderButton>}
+                    />}>
+                    Влад Анесов
+
+                </PanelHeaderContent>
+                <Button size="xl" className ="profileButton">Редактировать профиль</Button>
+                <Button size="xl" className ="profileButton">Общий рейтинг</Button>
+                <Div className="profileText">
+                    <strong >Информация о пользователе:</strong>
                 </Div>
-                <Button size="xl" className="startButton">Продолжить</Button>
+                <Group>
+                    <ul>
+                        <li>Рост:</li>
+                        <li>Вес:</li>
+                        <li>Интересы:</li>
+                    </ul>
+                </Group>
+                <Div className="profileText">
+                <strong>Результаты предыдущих дней: </strong>
+                </Div>
+                {/*TODO НИКИТА РАБОТАТЬ, СДЕЛАЙ РЕЗУЛЬТАТЫ ПРОШЛЫХ ДНЕЙ СТОЛБЦЕВАЯ ДИАГРАММА*/}
+                <Card size="l">
+                    <div style={{ height: 96 }} />
+                </Card>
                 <Tabbar>
                     <TabbarItem
                         onClick={() => console.log('hey')}

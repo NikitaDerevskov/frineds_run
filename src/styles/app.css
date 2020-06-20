@@ -22,4 +22,13 @@
     position: absolute;
     bottom: 65px;
 }
+.profileButton{
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.profileText
+{
+    text-align: center;
+}
 
