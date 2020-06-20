@@ -2,10 +2,12 @@
   "name": "my-best-app2",
   "version": "1.0.0",
   "description": "",
+  "homepage": "./",
   "main": "index.js",
   "scripts": {
     "start": "cross-env PORT=10888 HTTPS=true react-scripts start",
     "build": "react-scripts build",
+    "build-ghp": "gh-pages -d build",
     "predeploy": "npm run build",
     "deploy": "vk-miniapps-deploy"
   },
@@ -14,6 +16,7 @@
   "license": "MIT",
   "devDependencies": {
     "cross-env": "^5.2.0",
+    "gh-pages": "^3.0.0",
     "react-hot-loader": "^4.9.0",
     "react-scripts": "^3.4.1"
   },
