@@ -1,27 +1,55 @@
-// import EventItem from '../components/eventItem.js';
-// import EventList from '../components/eventList.js';
+// import React from 'react';
+// import ArticlesList from '../components/articlesList.js';
+// import ArticleItem from '../components/articleItem.js';
 import React from 'react';
 import {
     View,
     Panel,
     PanelHeader,
-    PanelHeaderBack,
-    Button,
-    PanelHeaderContent,
-    Avatar,
-    PanelHeaderButton,
-    Input,
-    FormLayoutGroup,
-    FormLayout, Group
+    Card,
+    CardGrid,
+    Button, PanelHeaderButton,PanelHeaderBack
 
 } from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
+import Bottompanel from "../bottompanel";
 import '../styles/app.css'
+import Icon28AddOutline from '@vkontakte/icons/dist/28/add_outline'
 
-function EventListView () {
+
+
+function ArticleView () {
     return (
-        <p>Hello this is events page</p>
+        <View activePanel="context">
+            <Panel id="context">
+                <PanelHeader
+                >
+                    События
+                </PanelHeader>
+                <Button size='xl' className ='buttonAddEvent'>Добавить событие</Button>
+                <CardGrid className='events'>
+                    <Card size="l">
+                        <div style={{ height: 100 }} />
+                    </Card>
+                    <Card size="l">
+                        <div style={{ height: 100 }} />
+                    </Card>
+                    <Card size="l">
+                        <div style={{ height: 100 }} />
+                    </Card>
+                    <Card size="l">
+                        <div style={{ height: 100 }} />
+                    </Card>
+                    <Card size="l">
+                        <div style={{ height: 100 }} />
+                    </Card>
+                </CardGrid>
+
+                <Bottompanel></Bottompanel>
+            </Panel>
+        </View>
     );
 }
 
-export default EventListView;
+export default ArticleView;
+

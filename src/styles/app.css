@@ -53,4 +53,13 @@
     margin-left: 20px;
     margin-bottom: -20px;
 }
+.events
+{
+    margin: 0px auto;
+}
+.buttonAddEvent
+{
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
