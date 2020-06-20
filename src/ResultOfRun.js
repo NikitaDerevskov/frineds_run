@@ -4,23 +4,13 @@ import {
     Panel,
     PanelHeader,
     PanelHeaderBack,
-    Tabbar,
-    TabbarItem,
     Button,
-    PanelHeaderContent,
-    Avatar,
-    Div,
-    PanelHeaderButton,
-    Group, Card
+    Div, Card
 
 } from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
-import logo from '../src/start_image.png';
 import './styles/app.css'
 
-import Icon28NewsfeedOutline from '@vkontakte/icons/dist/28/newsfeed_outline';
-import Icon28Users from '@vkontakte/icons/dist/28/users';
-import Icon28Profile from '@vkontakte/icons/dist/28/profile'
 
 
 function App () {

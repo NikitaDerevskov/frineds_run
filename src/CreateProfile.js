@@ -4,8 +4,6 @@ import {
     Panel,
     PanelHeader,
     PanelHeaderBack,
-    Tabbar,
-    TabbarItem,
     Button,
     PanelHeaderContent,
     Avatar,

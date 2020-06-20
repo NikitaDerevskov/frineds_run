@@ -4,8 +4,6 @@ import {
     Panel,
     PanelHeader,
     PanelHeaderBack,
-    Tabbar,
-    TabbarItem,
     Button,
     PanelHeaderContent,
     Avatar,
@@ -15,12 +13,10 @@ import {
 
 } from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
-import Icon28NewsfeedOutline from '@vkontakte/icons/dist/28/newsfeed_outline';
-import Icon28Users from '@vkontakte/icons/dist/28/users';
-import Icon28Profile from '@vkontakte/icons/dist/28/profile'
+
 import Icon28MessageOutline from '@vkontakte/icons/dist/28/message_outline'
 import './styles/app.css'
-
+import Bottompanel from "./bottompanel";
 
 function App () {
     return (
@@ -56,23 +52,7 @@ function App () {
                 <Card size="l">
                     <div style={{ height: 96 }} />
                 </Card>
-                <Tabbar>
-                    <TabbarItem
-                        onClick={() => console.log('hey')}
-                        data-story="feed"
-                        text="Статьи"
-                    ><Icon28NewsfeedOutline /></TabbarItem>
-                    <TabbarItem
-                        onClick={() => console.log('hey')}
-                        data-story="notifications"
-                        text="Найти друга"
-                    ><Icon28Users /></TabbarItem>
-                    <TabbarItem
-                        onClick={() => console.log('hey')}
-                        data-story="more"
-                        text="Профиль"
-                    ><Icon28Profile /></TabbarItem>
-                </Tabbar>
+                <Bottompanel></Bottompanel>
             </Panel>
         </View>
     );

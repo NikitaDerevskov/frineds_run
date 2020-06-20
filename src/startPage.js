@@ -4,14 +4,8 @@ import {
     Panel,
     PanelHeader,
     PanelHeaderBack,
-    Tabbar,
-    TabbarItem,
     Button,
-    PanelHeaderContent,
-    Avatar,
     Div,
-    PanelHeaderButton,
-    Group
 
 } from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
