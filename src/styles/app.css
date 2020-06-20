@@ -62,4 +62,14 @@
     padding-left: 10px;
     padding-right: 10px;
 }
+.barItem
+{
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+.barItem.TabbarItem__text
+{
+    text-decoration: none;
+}
 

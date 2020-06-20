@@ -17,6 +17,7 @@ export default function Bottompanel() {
         <Tabbar>
             <Link to="articles">
             <TabbarItem
+                className ="barItem"
                 onClick={() => console.log('hey')}
                 data-story="articles"
                 text="Статьи"
@@ -24,6 +25,7 @@ export default function Bottompanel() {
             </Link>
             <Link to="events">
             <TabbarItem
+                className ="barItem"
                 onClick={() => console.log('hey')}
                 data-story="more"
                 text="События"
@@ -31,6 +33,7 @@ export default function Bottompanel() {
             </Link>
             <Link to="/find">
             <TabbarItem
+                className ="barItem"
                 onClick={() => console.log('hey')}
                 data-story="notifications"
                 text="Найти друга"
@@ -38,6 +41,8 @@ export default function Bottompanel() {
             </Link>
             <Link to="/profile">
                 <TabbarItem
+                    className ="barItem"
+
                     onClick={() => console.log('they')}
                     data-story="more"
                     text="Профиль"
