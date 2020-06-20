@@ -10,7 +10,7 @@ import {
 import '@vkontakte/vkui/dist/vkui.css';
 import '../styles/app.css'
 import Score from "../components/score";
-
+import YandexMap from "../components/yandexMap"
 
 function EventView () {
     return (
@@ -19,6 +19,7 @@ function EventView () {
                 <PanelHeader left={<PanelHeaderBack onClick={() => console.log('hey')} />}>
                     Создать событие
                 </PanelHeader>
+                <YandexMap />
                 <Button size="xl" className="startButton">Продолжить</Button>
             </Panel>
         </View>

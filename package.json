@@ -35,6 +35,7 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-router-dom": "^5.2.0",
+    "react-yandex-maps": "^4.4.0",
     "yandex-map-react": "^1.1.1"
   },
   "browserslist": {
