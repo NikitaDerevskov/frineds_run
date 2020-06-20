@@ -6,12 +6,11 @@ import {
     PanelHeaderBack,
     Tabbar,
     TabbarItem,
-    Button,
-    PanelHeaderContent,
-    Avatar,
+    CardGrid,
+    Card,
     Div,
-    PanelHeaderButton
-
+    Group,
+    Button
 } from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
 import  "./styles/app.css"
@@ -28,17 +27,16 @@ function App () {
                 <PanelHeader left={<PanelHeaderBack onClick={() => console.log('hey')} />}>
                     FriendsRun
                 </PanelHeader>
-                    <PanelHeaderContent
-                        status="Вы занимаете 13 место из 37"
-                        before={<Avatar size={72} src={"logo512.png"}
-                                        right={<PanelHeaderButton><Icon28MessageOutline /></PanelHeaderButton>}
-                        />}>
-                        Влад Анесов
 
-                    </PanelHeaderContent>
                 <Div >
-                    <Button size="xl">Общий рейтинг</Button>
+
+                    <Group>
+                        <img src={window.location.origin + '/start_image.png'} />
+                        <strong>Привет дорогой друг!</strong>
+                        <br /><br /> Это приложение поможет тебе сохранять себя в форме, а также найти новых друзей.
+                    </Group>
                 </Div>
+                <Button size="xl">Продолжить</Button>
                 <Tabbar>
                     <TabbarItem
                         onClick={() => console.log('hey')}
