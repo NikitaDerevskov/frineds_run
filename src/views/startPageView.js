@@ -25,7 +25,7 @@ function StartPageView (props) {
     return (
         <View activePanel="main">
             <Panel id="main">
-                <PanelHeader left={<PanelHeaderBack onClick={() => console.log('hey')} />}>
+                <PanelHeader>
                     FriendsRun
                 </PanelHeader>
                 <Div className = "image">

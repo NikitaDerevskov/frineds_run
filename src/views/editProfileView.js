@@ -25,9 +25,12 @@ function EditProfile () {
     return (
         <View activePanel="main">
             <Panel id="main">
-                <PanelHeader left={<PanelHeaderBack onClick={() => console.log('hey')} />}>
-                    Редактировать
-                    профиль
+                <PanelHeader left={
+                    <Link to="events">
+                    <PanelHeaderBack />
+                    </Link>
+                }>
+                    Ред. профиль
                 </PanelHeader>
                 <Div className="buttonAddEvent">
                     <PanelHeaderContent

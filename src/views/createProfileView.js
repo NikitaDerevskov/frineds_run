@@ -25,7 +25,7 @@ function CreateProfileView () {
     return (
         <View activePanel="main">
             <Panel id="main">
-                <PanelHeader left={<PanelHeaderBack onClick={() => console.log('hey')} />}>
+                <PanelHeader>
                     Создать профиль
                 </PanelHeader>
                 <Div className="buttonAddEvent">

@@ -23,7 +23,7 @@ function ProfileView () {
     return (
         <View activePanel="main">
             <Panel id="main">
-                <PanelHeader left={<PanelHeaderBack onClick={() => console.log('hey')} />}>
+                <PanelHeader>
                     Профиль
                 </PanelHeader>
                 <Div classname = "buttonAddEvent">
