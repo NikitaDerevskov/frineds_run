@@ -28,12 +28,14 @@ function CreateProfileView () {
                 <PanelHeader left={<PanelHeaderBack onClick={() => console.log('hey')} />}>
                     Создать профиль
                 </PanelHeader>
+                <Div className="buttonAddEvent">
                 <PanelHeaderContent
                     before={<Avatar size={72} src={logo}
                                     right={<PanelHeaderButton><Icon28MessageOutline /></PanelHeaderButton>}
                     />}>
                     Влад Анесов
                 </PanelHeaderContent>
+                </Div>
                 <Group className = "createProfilInputGroup">
                     <FormLayout >
                         <FormLayoutGroup top="Рост" className = "createProfilInput">
