@@ -16,10 +16,9 @@ import {
 } from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
 import Icon28NewsfeedOutline from '@vkontakte/icons/dist/28/newsfeed_outline';
-import Icon28Notifications from '@vkontakte/icons/dist/28/notifications';
-import Icon28SearchOutline from '@vkontakte/icons/dist/28/search_outline';
-import Icon28MessageOutline from '@vkontakte/icons/dist/28/messages_outline'
-import Icon28More from '@vkontakte/icons/dist/28/more'
+import Icon28Users from '@vkontakte/icons/dist/28/users';
+import Icon28Profile from '@vkontakte/icons/dist/28/profile'
+import Icon28MessageOutline from '@vkontakte/icons/dist/28/message_outline'
 import './styles/app.css'
 
 
@@ -61,29 +60,18 @@ function App () {
                     <TabbarItem
                         onClick={() => console.log('hey')}
                         data-story="feed"
-                        text="Новости"
+                        text="Статьи"
                     ><Icon28NewsfeedOutline /></TabbarItem>
                     <TabbarItem
                         onClick={() => console.log('hey')}
-                        data-story="discover"
-                        text="Поиск"
-                    ><Icon28SearchOutline /></TabbarItem>
-                    <TabbarItem
-                        onClick={() => console.log('hey')}
-                        data-story="messages"
-                        label="12"
-                        text="Сообщения"
-                    ><Icon28MessageOutline /></TabbarItem>
-                    <TabbarItem
-                        onClick={() => console.log('hey')}
                         data-story="notifications"
-                        text="Уведомлен."
-                    ><Icon28Notifications /></TabbarItem>
+                        text="Найти друга"
+                    ><Icon28Users /></TabbarItem>
                     <TabbarItem
                         onClick={() => console.log('hey')}
                         data-story="more"
-                        text="Ещё"
-                    ><Icon28More /></TabbarItem>
+                        text="Профиль"
+                    ><Icon28Profile /></TabbarItem>
                 </Tabbar>
             </Panel>
         </View>

@@ -19,10 +19,8 @@ import logo from '../src/start_image.png';
 import './styles/app.css'
 
 import Icon28NewsfeedOutline from '@vkontakte/icons/dist/28/newsfeed_outline';
-import Icon28Notifications from '@vkontakte/icons/dist/28/notifications';
-import Icon28SearchOutline from '@vkontakte/icons/dist/28/search_outline';
-import Icon28MessageOutline from '@vkontakte/icons/dist/28/messages_outline'
-import Icon28More from '@vkontakte/icons/dist/28/more'
+import Icon28Users from '@vkontakte/icons/dist/28/users';
+import Icon28Profile from '@vkontakte/icons/dist/28/profile'
 
 
 function App () {
@@ -48,34 +46,6 @@ function App () {
                     </p>
                 </Div>
                 <Button size="xl" className="startButton">Продолжить</Button>
-                <Tabbar>
-                    <TabbarItem
-                        onClick={() => console.log('hey')}
-                        data-story="feed"
-                        text="Новости"
-                    ><Icon28NewsfeedOutline /></TabbarItem>
-                    <TabbarItem
-                        onClick={() => console.log('hey')}
-                        data-story="discover"
-                        text="Поиск"
-                    ><Icon28SearchOutline /></TabbarItem>
-                    <TabbarItem
-                        onClick={() => console.log('hey')}
-                        data-story="messages"
-                        label="12"
-                        text="Сообщения"
-                    ><Icon28MessageOutline /></TabbarItem>
-                    <TabbarItem
-                        onClick={() => console.log('hey')}
-                        data-story="notifications"
-                        text="Уведомлен."
-                    ><Icon28Notifications /></TabbarItem>
-                    <TabbarItem
-                        onClick={() => console.log('hey')}
-                        data-story="more"
-                        text="Ещё"
-                    ><Icon28More /></TabbarItem>
-                </Tabbar>
             </Panel>
         </View>
     );
