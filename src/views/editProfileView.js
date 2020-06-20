@@ -21,12 +21,13 @@ import {Link} from "react-router-dom";
 import logo from '../imgs/logo512.png'
 
 
-function CreateProfileView () {
+function EditProfile () {
     return (
         <View activePanel="main">
             <Panel id="main">
                 <PanelHeader left={<PanelHeaderBack onClick={() => console.log('hey')} />}>
-                    Создать профиль
+                    Редактировать
+                    профиль
                 </PanelHeader>
                 <Div className="buttonAddEvent">
                     <PanelHeaderContent
@@ -57,4 +58,4 @@ function CreateProfileView () {
     );
 }
 
-export default CreateProfileView;
+export default EditProfile;

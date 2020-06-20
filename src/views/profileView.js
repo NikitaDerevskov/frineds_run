@@ -17,6 +17,7 @@ import '@vkontakte/vkui/dist/vkui.css';
 import Icon28MessageOutline from '@vkontakte/icons/dist/28/message_outline'
 import '../styles/app.css'
 import Bottompanel from "../components/bottomPanel";
+import {Link} from "react-router-dom";
 
 function ProfileView () {
     return (
@@ -35,7 +36,9 @@ function ProfileView () {
                 </PanelHeaderContent>
                 </Div>
                 <Div className="buttonAddEvent">
+                    <Link to="/editProfile">
                     <Button size="xl" className ="profileButton">Редактировать профиль</Button>
+                    </Link>
                     <Button size="xl" className ="profileButton">Общий рейтинг</Button>
                     <Button size="xl" className ="profileButton">История событий</Button>
                 </Div>
