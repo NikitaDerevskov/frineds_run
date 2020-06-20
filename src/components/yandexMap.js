@@ -109,14 +109,7 @@ export default class YandexMap extends React.Component {
 	render() {
 	    return (
 		    <div>
-		    	<FormLayoutGroup top="Рост" className = "createProfilInput">
-		    		<FormField>
-		    		<input type="text" defaultValue="" id="suggest" ref={this.addressInput} placeholder="адрес..." />
-		    		</FormField>
-                    
-				</FormLayoutGroup>
-		        <button onClick={this.addAddress}>add</button>
-		        <YMaps query={{ load: "package.full", apikey: '56aa1688-a644-474b-ae6a-9667250e4c11' }}>
+				<YMaps query={{ load: "package.full", apikey: '56aa1688-a644-474b-ae6a-9667250e4c11' }}>
 		            <Map
 		            	width="100%"
 		                state={{center: this.state.coordinates, zoom: 9}}
@@ -131,6 +124,10 @@ export default class YandexMap extends React.Component {
 		            })}
 		            </Map>
 		        </YMaps>
+		        <FormLayoutGroup top="Рост" className = "createProfilInput">
+		    		<input type="text" id="suggest" ref={this.addressInput} placeholder="адрес..." />
+                	<Button size="xl" className="saveButton" onClick={this.addAddress}>Добавить</Button>    
+				</FormLayoutGroup>
 		        <ul>
 		        	{this.state.address.map((n, i) => (
 		            	<li key={i}>

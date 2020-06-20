@@ -20,7 +20,8 @@ import Textarea from "@vkontakte/vkui/dist/components/Textarea/Textarea";
 
 
 function App () {
-    return (
+    bridge.send("VKWebAppGetUserInfo", {}).then(x => console.log('zas',x));
+    return ( 
         <View activePanel="main">
             <Panel id="main">
                 <PanelHeader left={<PanelHeaderBack onClick={() => console.log('hey')} />}>
