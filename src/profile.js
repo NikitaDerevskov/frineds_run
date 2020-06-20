@@ -15,7 +15,7 @@ import {
 
 } from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
-
+import "../../src/styles/app.css"
 import Icon28NewsfeedOutline from '@vkontakte/icons/dist/28/newsfeed_outline';
 import Icon28Notifications from '@vkontakte/icons/dist/28/notifications';
 import Icon28SearchOutline from '@vkontakte/icons/dist/28/search_outline';
@@ -33,9 +33,10 @@ function App () {
                 <PanelHeaderContent
                     status="Вы занимаете 13 место из 37"
                     before={<Avatar size={72} src={"logo512.png"}
-
+                                    right={<PanelHeaderButton><Icon28MessageOutline /></PanelHeaderButton>}
                     />}>
                     Влад Анесов
+
                 </PanelHeaderContent>
                 <Button size="xl">Общий рейтинг</Button>
                 <Tabbar>
