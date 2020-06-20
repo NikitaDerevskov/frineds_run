@@ -28,6 +28,7 @@ function App () {
     return (
         <Router>
             <div>
+
                 <Switch>
                     <Route path="/history">
                         <HistoryOfEvents/>

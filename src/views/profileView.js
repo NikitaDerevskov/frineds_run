@@ -51,11 +51,9 @@ function ProfileView () {
                 </Div>
                 <Group>
                     <Div className = "buttonAddEvent">
-                        <Div className="profileText">
                     Рост
                     <br/>Вес
                     <br/>Интересы
-                        </Div>
                     </Div>
                 </Group>
                 <Div className="profileText">

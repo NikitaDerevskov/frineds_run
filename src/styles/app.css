@@ -80,9 +80,23 @@
 {
     margin-top: 10px;
 }
-.textCenter
+.parent
 {
-
+    border: 1px solid black;
+    height: 200px;
 }
-
-
+.child
+{
+    height: 100px;
+    display: inline-block;
+    background: red;
+    width: 30%;
+}
+.tinderDiv
+{
+    margin-top: 20px;
+}
+.tinderButton
+{
+    margin-right: 30px;
+}
