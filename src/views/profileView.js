@@ -39,17 +39,23 @@ function ProfileView () {
                     <Link to="/editProfile">
                     <Button size="xl" className ="profileButton">Редактировать профиль</Button>
                     </Link>
+                    <Link to="raiting">
                     <Button size="xl" className ="profileButton">Общий рейтинг</Button>
+                    </Link>
+                    <Link to="/history">
                     <Button size="xl" className ="profileButton">История событий</Button>
+                    </Link>
                 </Div>
                 <Div className="profileText">
                     <strong >Информация о пользователе:</strong>
                 </Div>
                 <Group>
                     <Div className = "buttonAddEvent">
+                        <Div className="profileText">
                     Рост
                     <br/>Вес
                     <br/>Интересы
+                        </Div>
                     </Div>
                 </Group>
                 <Div className="profileText">

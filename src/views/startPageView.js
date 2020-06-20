@@ -31,10 +31,10 @@ function StartPageView (props) {
                 <Div className = "image">
                     <img src={logo} alt="logo" />
                     <p>
-                        <strong >Привет дорогой друг!</strong>
+                        <strong >Привет, дорогой друг!</strong>
                     </p>
                     <p className="startText">
-                        <br/>Это приложение поможет тебе держать себя в форме, а также находить новых друзей
+                        <br/>Это приложение поможет тебе держать себя в форме, а также находить новых друзей.
                     </p>
                 </Div>
                 <Link to="/create-user">

@@ -10,6 +10,8 @@ import TinderView from "./views/tinderView"
 import ArticleView from "./views/articlesView"
 import EventView from "./views/eventView";
 import EditProfile from "./views/editProfileView"
+import RaitingView from "./views/raitingView"
+import HistoryOfEvents from "./views/HistoryOfEvents";
 import {
     BrowserRouter as Router,
     Switch,
@@ -27,6 +29,12 @@ function App () {
         <Router>
             <div>
                 <Switch>
+                    <Route path="/history">
+                        <HistoryOfEvents/>
+                    </Route>
+                    <Route path="/raiting">
+                        <RaitingView/>
+                    </Route>
                     <Route path="/createEvent">
                         <EventView/>
                     </Route>
