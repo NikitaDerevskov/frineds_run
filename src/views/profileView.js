@@ -24,6 +24,7 @@ function ProfileView () {
                 <PanelHeader left={<PanelHeaderBack onClick={() => console.log('hey')} />}>
                     Профиль
                 </PanelHeader>
+                <Div classname = "buttonAddEvent">
                 <PanelHeaderContent
                     status="Вы занимаете 13 место из 37"
                     before={<Avatar size={72} src={"logo512.png"}
@@ -32,17 +33,20 @@ function ProfileView () {
                     Влад Анесов
 
                 </PanelHeaderContent>
+                </Div>
+                <Div className="buttonAddEvent">
                 <Button size="xl" className ="profileButton">Редактировать профиль</Button>
                 <Button size="xl" className ="profileButton">Общий рейтинг</Button>
+                </Div>
                 <Div className="profileText">
                     <strong >Информация о пользователе:</strong>
                 </Div>
                 <Group>
-                    <ul>
-                        <li>Рост:</li>
-                        <li>Вес:</li>
-                        <li>Интересы:</li>
-                    </ul>
+                    <Div className = "buttonAddEvent">
+                    Рост
+                    <br/>Вес
+                    <br/>Интересы
+                    </Div>
                 </Group>
                 <Div className="profileText">
                     <strong>Результаты предыдущих дней: </strong>

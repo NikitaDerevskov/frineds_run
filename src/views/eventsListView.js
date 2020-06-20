@@ -3,7 +3,8 @@ import {
     View,
     Panel,
     PanelHeader,
-    Button
+    Button,
+    Div
 
 } from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
@@ -18,9 +19,11 @@ function EventsListView () {
         <View activePanel="context">
             <Panel id="context">
                 <PanelHeader>События</PanelHeader>
-                <Button size='xl' className ='buttonAddEvent'>Добавить событие</Button>
-                <EventList></EventList>
-                <Bottompanel></Bottompanel>
+                <Div className ='buttonAddEvent'>
+                    <Button size='xl' >Добавить событие</Button>
+                </Div>
+                <EventList/>
+                <Bottompanel/>
             </Panel>
         </View>
     );
