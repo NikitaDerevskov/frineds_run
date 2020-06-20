@@ -12,12 +12,14 @@ import Bottompanel from "./bottompanel";
 import './styles/app.css'
 import StartPageView from './views/startPageView'
 import CreateProfileView from './views/createProfileView'
+import EventsListView from './views/eventsListView'
 import {
     BrowserRouter as Router,
     Switch,
     Route,
     Link
 } from "react-router-dom";
+import EventListView from "./views/eventsListView";
 
 function App () {
     return (
@@ -30,7 +32,7 @@ function App () {
                         <CreateProfileView />
                     </Route>
                     <Route path="/events">
-                        <CreateProfileView />
+                        <EventListView />
                     </Route>
                     <Route path="/">
                         <StartPageView />

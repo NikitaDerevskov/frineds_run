@@ -44,7 +44,7 @@ function CreateProfileView () {
                         <Textarea top="Интересы" placeholder="" />
                     </FormLayout>
                 </Group>
-                <Link to="/">
+                <Link to="/events">
                 <Button size="xl" className="saveButton" onClick={() => console.log('hey')}>Сохранить</Button>
                 </Link>
             </Panel>
