@@ -6,15 +6,11 @@ import {
     View,
     Panel,
     PanelHeader,
-    Card,
-    CardGrid
-
 } from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
 import Bottompanel from "../components/bottomPanel";
 import '../styles/app.css'
 import ArticlesList from "../components/articlesList";
-
 
 
 function ArticleView () {
