@@ -8,6 +8,7 @@ import ProfileView from './views/profileView'
 import EventsListView from "./views/eventsListView";
 import TinderView from "./views/tinderView"
 import ArticleView from "./views/articlesView"
+import EventView from "./views/eventView";
 import {
     BrowserRouter as Router,
     Switch,
@@ -25,6 +26,9 @@ function App () {
         <Router>
             <div>
                 <Switch>
+                    <Route path="/createEvent">
+                        <EventView/>
+                    </Route>
                     <Route path="/profile">
                         <ProfileView />
                     </Route>

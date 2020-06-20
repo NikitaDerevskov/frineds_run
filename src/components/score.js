@@ -1,6 +1,6 @@
 import React from 'react';
 import {Card, Div} from "@vkontakte/vkui";
-export default Score;
+
 
 export default function Score() {
     return(

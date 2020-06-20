@@ -9,7 +9,8 @@ import {
     Avatar,
     Card,
     PanelHeaderButton,
-    Group, Div
+    Group,
+    Div
 
 } from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
@@ -31,12 +32,12 @@ function ProfileView () {
                                     right={<PanelHeaderButton><Icon28MessageOutline /></PanelHeaderButton>}
                     />}>
                     Влад Анесов
-
                 </PanelHeaderContent>
                 </Div>
                 <Div className="buttonAddEvent">
-                <Button size="xl" className ="profileButton">Редактировать профиль</Button>
-                <Button size="xl" className ="profileButton">Общий рейтинг</Button>
+                    <Button size="xl" className ="profileButton">Редактировать профиль</Button>
+                    <Button size="xl" className ="profileButton">Общий рейтинг</Button>
+                    <Button size="xl" className ="profileButton">История событий</Button>
                 </Div>
                 <Div className="profileText">
                     <strong >Информация о пользователе:</strong>

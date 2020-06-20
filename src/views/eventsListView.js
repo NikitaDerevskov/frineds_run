@@ -9,6 +9,7 @@ import {
     Switch
 
 } from '@vkontakte/vkui';
+import {Link} from "react-router-dom";
 import '@vkontakte/vkui/dist/vkui.css';
 import Bottompanel from "../components/bottomPanel";
 import '../styles/app.css'
@@ -22,7 +23,9 @@ function EventsListView () {
             <Panel id="context">
                 <PanelHeader>События</PanelHeader>
                 <Div className ='buttonAddEvent'>
+                    <Link to="/createEvent">
                     <Button size='xl' >Создать событие</Button>
+                    </Link>
                     <Cell asideContent={<Switch />}>
                         Показывать только
                         <br/>мои события

@@ -19,7 +19,7 @@ function ScoreView () {
                 <PanelHeader left={<PanelHeaderBack onClick={() => console.log('hey')} />}>
                     Результаты
                 </PanelHeader>
-                <Score></Score>
+                <Score/>
                 <Button size="xl" className="startButton">Продолжить</Button>
             </Panel>
         </View>
