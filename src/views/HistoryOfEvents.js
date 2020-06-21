@@ -4,8 +4,6 @@ import {
     Panel,
     PanelHeader,
     PanelHeaderBack,
-    Button,
-
 } from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
 import '../styles/app.css'

@@ -16,7 +16,6 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
 } from "react-router-dom";
 
 
@@ -64,14 +63,6 @@ function App () {
             </div>
         </Router>
     );
-}
-
-function About() {
-    return <h2>About</h2>;
-}
-
-function Users() {
-    return <h2>Users</h2>;
 }
 
 export default App;

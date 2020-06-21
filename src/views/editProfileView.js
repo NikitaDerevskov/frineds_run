@@ -18,7 +18,7 @@ import Icon28MessageOutline from '@vkontakte/icons/dist/28/message_outline'
 import '../styles/app.css'
 import Textarea from "@vkontakte/vkui/dist/components/Textarea/Textarea";
 import {Link} from "react-router-dom";
-import logo from '../imgs/logo512.png'
+import logo from '../components/userIcon.jpg'
 
 
 function EditProfile () {
@@ -37,7 +37,7 @@ function EditProfile () {
                         before={<Avatar size={72} src={logo}
                                         right={<PanelHeaderButton><Icon28MessageOutline /></PanelHeaderButton>}
                         />}>
-                        Влад Анесов
+                        Иван Пономарев
                     </PanelHeaderContent>
                 </Div>
                 <Group className = "createProfilInputGroup">

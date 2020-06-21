@@ -3,7 +3,6 @@ import {
     View,
     Panel,
     PanelHeader,
-    PanelHeaderBack,
     Button,
     PanelHeaderContent,
     Avatar,
@@ -18,6 +17,7 @@ import Icon28MessageOutline from '@vkontakte/icons/dist/28/message_outline'
 import '../styles/app.css'
 import Bottompanel from "../components/bottomPanel";
 import {Link} from "react-router-dom";
+import logo from '../components/userIcon.jpg'
 
 function ProfileView () {
     return (
@@ -26,45 +26,37 @@ function ProfileView () {
                 <PanelHeader>
                     Профиль
                 </PanelHeader>
-                <Div classname = "buttonAddEvent">
+                <Div className = "buttonAddEvent">
                 <PanelHeaderContent
-                    status="Вы занимаете 13 место из 37"
-                    before={<Avatar size={72} src={"logo512.png"}
+                    status="Вы занимаете 1 место из 3"
+                    before={<Avatar size={72} src={logo}
                                     right={<PanelHeaderButton><Icon28MessageOutline /></PanelHeaderButton>}
                     />}>
-                    Влад Анесов
+                    Иван Пономарев
                 </PanelHeaderContent>
                 </Div>
-                <Div className="buttonAddEvent">
-                    <Link to="/editProfile">
-                    <Button size="xl" className ="profileButton">Редактировать профиль</Button>
-                    </Link>
-                    <Link to="raiting">
-                    <Button size="xl" className ="profileButton">Общий рейтинг</Button>
-                    </Link>
-                    <Link to="/history">
-                    <Button size="xl" className ="profileButton">История событий</Button>
-                    </Link>
-                </Div>
+
                 <Div className="profileText">
                     <strong >Информация о пользователе:</strong>
                 </Div>
                 <Group>
                     <Div className = "buttonAddEvent">
-                        <Div className="profileText">
-                    Рост
-                    <br/>Вес
-                    <br/>Интересы
+                    Рост: 178
+                    <br/>Вес: 70
+                    <br/>Интересы: люблю короткие дистанции
                         </Div>
-                    </Div>
                 </Group>
-                <Div className="profileText">
-                    <strong>Результаты предыдущих дней: </strong>
+                <Div className="buttonAddEvent">
+                    <Link to="/editProfile">
+                        <Button size="xl" className ="profileButton">Редактировать профиль</Button>
+                    </Link>
+                    <Link to="raiting">
+                        <Button size="xl" className ="profileButton">Общий рейтинг</Button>
+                    </Link>
+                    <Link to="/history">
+                        <Button size="xl" className ="profileButton">История событий</Button>
+                    </Link>
                 </Div>
-                {/*TODO НИКИТА РАБОТАТЬ, СДЕЛАЙ РЕЗУЛЬТАТЫ ПРОШЛЫХ ДНЕЙ СТОЛБЦЕВАЯ ДИАГРАММА*/}
-                <Card size="l">
-                    <div style={{ height: 96 }} />
-                </Card>
                 <Bottompanel></Bottompanel>
             </Panel>
         </View>

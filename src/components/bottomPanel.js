@@ -18,7 +18,6 @@ export default function Bottompanel() {
             <Link to="articles">
             <TabbarItem
                 className ="barItem"
-                onClick={() => console.log('hey')}
                 data-story="articles"
                 text="Статьи"
             ><Icon28NewsfeedOutline /></TabbarItem>
@@ -26,7 +25,6 @@ export default function Bottompanel() {
             <Link to="events">
             <TabbarItem
                 className ="barItem"
-                onClick={() => console.log('hey')}
                 data-story="more"
                 text="События"
             ><Icon28More /></TabbarItem>
@@ -34,7 +32,6 @@ export default function Bottompanel() {
             <Link to="/find">
             <TabbarItem
                 className ="barItem"
-                onClick={() => console.log('hey')}
                 data-story="notifications"
                 text="Найти друга"
             ><Icon28Users /></TabbarItem>
@@ -42,8 +39,6 @@ export default function Bottompanel() {
             <Link to="/profile">
                 <TabbarItem
                     className ="barItem"
-
-                    onClick={() => console.log('they')}
                     data-story="more"
                     text="Профиль"
                 ><Icon28Profile /></TabbarItem>

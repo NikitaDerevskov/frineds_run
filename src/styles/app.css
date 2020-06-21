@@ -80,8 +80,18 @@
 {
     margin-top: 10px;
 }
-.textCenter
+.buttonMap{
+    margin-top: 10px;
+
+}
+.countOfFriend
 {
+    padding-bottom: -30px;
+}
+.imageFind
+{
+    flex: 1;
+    resizeMode: 'contain'
 
 }
 

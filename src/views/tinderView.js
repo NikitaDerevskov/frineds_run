@@ -18,8 +18,8 @@ function TinderView () {
                 <PanelHeader>
                     Найти друга
                 </PanelHeader>
-                <UserCard></UserCard>
-                <Bottompanel></Bottompanel>
+                <UserCard/>
+                <Bottompanel/>
             </Panel>
         </View>
     );

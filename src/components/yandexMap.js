@@ -1,29 +1,15 @@
 import React from 'react';
-import CreateItem from '../components/createEvent.js';
 import {
-    View,
-    Panel,
-    PanelHeader,
-    PanelHeaderBack,
-    Button,
-    PanelHeaderContent,
-    Avatar,
-    PanelHeaderButton,
-    Input,
-    FormLayoutGroup,
-    FormLayout, Group
+	Button,
+	FormLayoutGroup,
+	Div, Slider
 
 } from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
-import Icon28MessageOutline from '@vkontakte/icons/dist/28/message_outline'
-import Textarea from "@vkontakte/vkui/dist/components/Textarea/Textarea";
+import {Link} from "react-router-dom";
 import { YMaps, Map, Placemark } from "react-yandex-maps";
+import Textarea from "@vkontakte/vkui/dist/components/Textarea/Textarea";
 
-const mapState = {
-	center: [55.76, 37.64],
-	zoom: 10,
-	controls: [] 
-};
 
 export default class YandexMap extends React.Component {
 	state = {
@@ -126,7 +112,7 @@ export default class YandexMap extends React.Component {
 		        </YMaps>
 		        <FormLayoutGroup top="Рост" className = "createProfilInput">
 		    		<input type="text" id="suggest" ref={this.addressInput} placeholder="адрес..." />
-                	<Button size="xl" className="saveButton" onClick={this.addAddress}>Добавить</Button>    
+
 				</FormLayoutGroup>
 		        <ul>
 		        	{this.state.address.map((n, i) => (
@@ -136,7 +122,20 @@ export default class YandexMap extends React.Component {
 		            	</li>
 		            ))}
 		        </ul>
-		    </div>
+				<Div className="buttonAddEvent">
+				<Button size="xl" className="buttonMap" onClick={this.addAddress}>Добавить</Button>
+					<Button size="xl" className="buttonMap">Пригласить друзей</Button>
+					<p>Количество участников</p>
+					<Slider
+						min={10}
+						max={30}
+						top="Simple [10, 30]"
+					/>
+					<Link to="events">
+				<Button className="raiting" size="xl" className="buttonMap">Продолжить</Button>
+					</Link>
+				</Div>
+			</div>
 	    );
 	}
 }

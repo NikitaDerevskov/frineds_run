@@ -7,7 +7,6 @@ import {
     View,
     Panel,
     PanelHeader,
-    PanelHeaderBack,
     Button,
     Div,
 
@@ -21,7 +20,7 @@ import {
 
 
 
-function StartPageView (props) {
+function StartPageView () {
     return (
         <View activePanel="main">
             <Panel id="main">

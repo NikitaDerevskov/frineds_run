@@ -6,15 +6,19 @@ import {
     Button,
     Div,
     Cell,
-    Switch
-
+    Switch,
+    Group,
+    UsersStack,
+    Separator, Header, CardGrid
 } from '@vkontakte/vkui';
 import {Link} from "react-router-dom";
 import '@vkontakte/vkui/dist/vkui.css';
 import Bottompanel from "../components/bottomPanel";
 import '../styles/app.css'
 import EventList from "../components/eventList";
-
+import logo from "../imgs/logo512.png";
+import logo1 from "../components/userIcon.jpg"
+import logo2 from "../components/friendico.jpg"
 
 
 function EventsListView () {
@@ -31,8 +35,21 @@ function EventsListView () {
                         <br/>мои события
                     </Cell>
                 </Div>
-
-                <EventList/>
+                <Separator />
+                <Group>
+                    <Group header={<Header mode="secondary"></Header>}>
+                        <Cell asideContent={<Button>Пойти</Button>}>
+                            Забег по набережной пруда
+                        </Cell>
+                    </Group>
+                    <UsersStack
+                        photos={[
+                            logo
+                        ]}
+                        size="m"
+                    >Влад пойдет на это мероприятие</UsersStack>
+                </Group>
+                <Separator />
                 <Bottompanel/>
             </Panel>
         </View>
