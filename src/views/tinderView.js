@@ -2,7 +2,7 @@ import React from 'react';
 import {
     View,
     Panel,
-    PanelHeader,
+    PanelHeader, Header, Cell, Button, Group,
 
 } from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
@@ -19,6 +19,11 @@ function TinderView () {
                     Найти друга
                 </PanelHeader>
                 <UserCard/>
+                <Group header={<Header mode="secondary"></Header>}>
+                    <Cell asideContent={<Button>Отклонить</Button>}>
+                        <Button>Добавить</Button>
+                    </Cell>
+                </Group>
                 <Bottompanel/>
             </Panel>
         </View>

@@ -3,12 +3,13 @@ import {
     View,
     Panel,
     PanelHeader,
-    PanelHeaderBack,
+    PanelHeaderBack, Group, Header, Cell, Button, UsersStack,
 } from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
 import '../styles/app.css'
 import {Link} from "react-router-dom";
 import EventList from "../components/eventList";
+import logo from "../imgs/logo512.png";
 
 
 
@@ -23,7 +24,14 @@ function HistoryOfEvents () {
                 }>
                     История событий
                 </PanelHeader>
-                <EventList/>
+                <Group>
+                    <Group header={<Header mode="secondary"></Header>}>
+                        <Cell asideContent={<Button>Посмотреть</Button>}>
+                            Забег по набережной пруда
+                        </Cell>
+                    </Group>
+
+                </Group>
             </Panel>
         </View>
     );
