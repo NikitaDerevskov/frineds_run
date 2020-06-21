@@ -1,0 +1,98 @@
+
+.Hey {
+    margin-top: 50px;
+}
+.image img
+{
+    display: block;
+
+    margin: 0 auto;
+}
+.image
+{
+    margin-top: 20px;
+    text-align: center;
+}
+.startText
+{
+    margin-top: -12px;
+}
+.startButton
+{
+    position: absolute;
+}
+.saveButton
+{
+    position: absolute;
+}
+.profileButton{
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.profileText
+{
+    text-align: center;
+}
+.createProfilInputGroup
+{
+
+    margin-top: 10px;
+}
+.createProfilInput
+{
+    margin-bottom: -15px;
+}
+.resultText
+{
+    margin-left: 10px;
+    text-align: left;
+}
+.findFriendText
+{
+    margin-left: 20px;
+    margin-bottom: -20px;
+}
+.events
+{
+    margin: 0px auto;
+}
+/*Осторожно, завязано на других элементах, было лень переделывать*/
+.buttonAddEvent
+{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.barItem
+{
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+.barItem.TabbarItem__text
+{
+    text-decoration: none;
+}
+.editProfileText.PanelHeader-content{
+    font-size: 20px;
+}
+.raiting
+{
+    margin-top: 10px;
+}
+.buttonMap{
+    margin-top: 10px;
+
+}
+.countOfFriend
+{
+    padding-bottom: -30px;
+}
+.imageFind
+{
+    flex: 1;
+    resizeMode: 'contain'
+
+}
+
+
