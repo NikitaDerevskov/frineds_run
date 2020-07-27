@@ -12,10 +12,18 @@
 {
     margin-top: 20px;
     text-align: center;
+    z-index: -1;
+}
+.rectangle {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    background: cornflowerblue;
+    border-radius: 10px;
 }
 .startText
 {
-    margin-top: -12px;
+    text-align: center;
 }
 .startButton
 {
@@ -46,6 +54,10 @@
 .resultText
 {
     margin-left: 10px;
+    text-align: left;
+}
+.StartPageText
+{
     text-align: left;
 }
 .findFriendText

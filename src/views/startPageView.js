@@ -25,16 +25,24 @@ function StartPageView () {
         <View activePanel="main">
             <Panel id="main">
                 <PanelHeader>
-                    FriendsRun
+                    <p>
+                        FriendsRun
+                    </p>
                 </PanelHeader>
+                <div className="rectangle">
+                <p className="startText">
+                    <strong >Привет, дорогой друг!</strong>
+                </p>
+                    <p className="startText">
+                        <strong >Зачем тебе это приложение ?</strong>
+                    </p>
+                <p>
+                    Смысл не только в том, чтобы помочь тебе держать себя в форме, — в нём ты сможешь найти тех, кто мог бы к тебе присоединиться.
+                </p>
+                </div>
                 <Div className = "image">
                     <img src={logo} alt="logo" />
-                    <p>
-                        <strong >Привет, дорогой друг!</strong>
-                    </p>
-                    <p className="startText">
-                        <br/>Это приложение поможет тебе держать себя в форме, а также находить новых друзей.
-                    </p>
+
                 </Div>
                 <Link to="/create-user">
                     <Div className = "buttonAddEvent">
