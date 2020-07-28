@@ -10,12 +10,13 @@
 }
 
 .rectangle {
-    margin-left: -10px;
-    margin-top: -10px;
+    position: fixed;
     background: #ADD3FF;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
-    border-radius: 0px 0px 30px 30px;
-
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 0 0 30px 30px;
+    width: 100%;
+    right: -11px;
+    margin-top: -10px;
 }
 .startText
 {
@@ -25,20 +26,15 @@
 {
     position: fixed;
     bottom: -1%;
-    left: -11px;
+    left: -12px;
     width: 100%;
 }
-.buttonContinue2
-{
-}
+
 .background {
     position: fixed;
-    background: bisque url("../start_image.png");
     height: 100%;
     width: 100%;
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
+    background: bisque url("../start_image.png") no-repeat center;
     background-size: cover;
 }
 .startButton

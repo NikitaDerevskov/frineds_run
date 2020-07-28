@@ -44,9 +44,7 @@ function StartPageView () {
 
                 <Link to="/create-user">
                     <Div className = "buttonContinue">
-                        <Div className="buttonContinue2">
                 <Button size="xl" >Продолжить</Button>
-                        </Div>
                     </Div>
                 </Link>
                 </Div>
