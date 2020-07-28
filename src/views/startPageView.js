@@ -37,14 +37,16 @@ function StartPageView () {
                     <p className="startText">
                         <strong >Зачем тебе это приложение ?</strong>
                     </p>
-                <p>
+                <p className="startText">
                     Смысл не только в том, чтобы помочь тебе держать себя в форме, — в нём ты сможешь найти тех, кто мог бы к тебе присоединиться.
                 </p>
                 </Div>
 
                 <Link to="/create-user">
                     <Div className = "buttonContinue">
+                        <Div className="buttonContinue2">
                 <Button size="xl" >Продолжить</Button>
+                        </Div>
                     </Div>
                 </Link>
                 </Div>
