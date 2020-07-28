@@ -12,7 +12,7 @@ import {
 
 } from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
-import logo from '../start_image.png';
+import logo from '../start_image.png'
 import '../styles/app.css'
 import {
     Link
@@ -29,7 +29,7 @@ function StartPageView () {
                         FriendsRun
                     </p>
                 </PanelHeader>
-                <Div className="background">
+                <div  className="background">
                 <Div className="rectangle">
                 <p className="startText">
                     <strong >Привет, дорогой друг!</strong>
@@ -46,7 +46,7 @@ function StartPageView () {
                 <Button size="xl" >Продолжить</Button>
                     </Div>
                 </Link>
-                </Div>
+                </div>
             </Panel>
         </View>
     );
