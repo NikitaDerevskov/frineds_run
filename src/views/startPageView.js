@@ -29,7 +29,7 @@ function StartPageView () {
                         FriendsRun
                     </p>
                 </PanelHeader>
-                <div  className="background">
+                <Div  className="background">
                 <Div className="rectangle">
                 <p className="startText">
                     <strong >Привет, дорогой друг!</strong>
@@ -41,12 +41,13 @@ function StartPageView () {
                     Смысл не только в том, чтобы помочь тебе держать себя в форме, — в нём ты сможешь найти тех, кто мог бы к тебе присоединиться.
                 </p>
                 </Div>
+
                 <Link to="/create-user">
                     <Div className = "buttonContinue">
                 <Button size="xl" >Продолжить</Button>
                     </Div>
                 </Link>
-                </div>
+                </Div>
             </Panel>
         </View>
     );
