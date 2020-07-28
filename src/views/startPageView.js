@@ -29,7 +29,8 @@ function StartPageView () {
                         FriendsRun
                     </p>
                 </PanelHeader>
-                <div className="rectangle">
+                <Div className="background">
+                <Div className="rectangle">
                 <p className="startText">
                     <strong >Привет, дорогой друг!</strong>
                 </p>
@@ -39,16 +40,13 @@ function StartPageView () {
                 <p>
                     Смысл не только в том, чтобы помочь тебе держать себя в форме, — в нём ты сможешь найти тех, кто мог бы к тебе присоединиться.
                 </p>
-                </div>
-                <Div className = "image">
-                    <img src={logo} alt="logo" />
-
                 </Div>
                 <Link to="/create-user">
-                    <Div className = "buttonAddEvent">
+                    <Div className = "buttonContinue">
                 <Button size="xl" >Продолжить</Button>
                     </Div>
                 </Link>
+                </Div>
             </Panel>
         </View>
     );

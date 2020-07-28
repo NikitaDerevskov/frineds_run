@@ -25,6 +25,17 @@
 {
     text-align: center;
 }
+.buttonContinue
+{
+    position: fixed; /* Фиксированное положение */
+    bottom: 0; /* Левый нижний угол */
+
+}
+.background {
+    background-image: url("../start_image.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .startButton
 {
     position: absolute;
