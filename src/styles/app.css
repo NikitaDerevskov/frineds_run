@@ -8,26 +8,39 @@
 
     margin: 0 auto;
 }
-
+.Div--ios
+{
+    padding: 0px;
+}
+.Div--android
+{
+    padding: 0px;
+}
 .rectangle {
     position: fixed;
     background: #ADD3FF;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
     border-radius: 0 0 30px 30px;
     width: 100%;
-    right: -11px;
-    margin-top: -10px;
 }
 .startText
 {
+    margin-right: 5%;
+    margin-left: 5%;
     text-align: center;
 }
 .buttonContinue
 {
+    margin-right: 2%;
+    margin-left: 2%;
     position: fixed;
-    bottom: -1%;
-    left: -12px;
-    width: 100%;
+    bottom: 2%;
+    width: 96%;
+}
+.marginButton
+{
+    padding-right: 10%;
+    padding-left: 10%;
 }
 
 .background {

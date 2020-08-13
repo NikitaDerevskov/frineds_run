@@ -41,12 +41,13 @@ function StartPageView () {
                     Смысл не только в том, чтобы помочь тебе держать себя в форме, — в нём ты сможешь найти тех, кто мог бы к тебе присоединиться.
                 </p>
                 </Div>
-
+                <Div>
                 <Link to="/create-user">
                     <Div className = "buttonContinue">
-                <Button size="xl" >Продолжить</Button>
+                            <Button size="xl">Продолжить</Button>
                     </Div>
                 </Link>
+                </Div>
                 </Div>
             </Panel>
         </View>
