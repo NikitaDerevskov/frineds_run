@@ -8,14 +8,47 @@
 
     margin: 0 auto;
 }
-.image
+.Div--ios
 {
-    margin-top: 20px;
-    text-align: center;
+    padding: 0px;
+}
+.Div--android
+{
+    padding: 0px;
+}
+.rectangle {
+    position: fixed;
+    background: #ADD3FF;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 0 0 30px 30px;
+    width: 100%;
 }
 .startText
 {
-    margin-top: -12px;
+    margin-right: 5%;
+    margin-left: 5%;
+    text-align: center;
+}
+.buttonContinue
+{
+    margin-right: 2%;
+    margin-left: 2%;
+    position: fixed;
+    bottom: 2%;
+    width: 96%;
+}
+.marginButton
+{
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.background {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: bisque url("../start_image.png") no-repeat center;
+    background-size: cover;
 }
 .startButton
 {
@@ -46,6 +79,10 @@
 .resultText
 {
     margin-left: 10px;
+    text-align: left;
+}
+.StartPageText
+{
     text-align: left;
 }
 .findFriendText

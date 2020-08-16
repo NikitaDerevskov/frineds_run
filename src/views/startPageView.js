@@ -12,7 +12,7 @@ import {
 
 } from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
-import logo from '../start_image.png';
+import logo from '../start_image.png'
 import '../styles/app.css'
 import {
     Link
@@ -25,22 +25,30 @@ function StartPageView () {
         <View activePanel="main">
             <Panel id="main">
                 <PanelHeader>
-                    FriendsRun
-                </PanelHeader>
-                <Div className = "image">
-                    <img src={logo} alt="logo" />
                     <p>
-                        <strong >Привет, дорогой друг!</strong>
+                        FriendsRun
                     </p>
+                </PanelHeader>
+                <Div  className="background">
+                <Div className="rectangle">
+                <p className="startText">
+                    <strong >Привет, дорогой друг!</strong>
+                </p>
                     <p className="startText">
-                        <br/>Это приложение поможет тебе держать себя в форме, а также находить новых друзей.
+                        <strong >Зачем тебе это приложение?</strong>
                     </p>
+                <p className="startText">
+                    Смысл не только в том, чтобы помочь тебе держать себя в форме, — в нём ты сможешь найти тех, кто мог бы к тебе присоединиться.
+                </p>
                 </Div>
+                <Div>
                 <Link to="/create-user">
-                    <Div className = "buttonAddEvent">
-                <Button size="xl" >Продолжить</Button>
+                    <Div className = "buttonContinue">
+                            <Button size="xl">Продолжить</Button>
                     </Div>
                 </Link>
+                </Div>
+                </Div>
             </Panel>
         </View>
     );
