@@ -35,7 +35,7 @@ function StartPageView () {
                     <strong >Привет, дорогой друг!</strong>
                 </p>
                     <p className="startText">
-                        <strong >Зачем тебе это приложение ?</strong>
+                        <strong >Зачем тебе это приложение?</strong>
                     </p>
                 <p className="startText">
                     Смысл не только в том, чтобы помочь тебе держать себя в форме, — в нём ты сможешь найти тех, кто мог бы к тебе присоединиться.
